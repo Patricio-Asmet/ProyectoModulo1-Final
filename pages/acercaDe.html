@@ -94,8 +94,12 @@
               <li class="nav-item">
                 <a class="nav-link" href="./Registro.html">Registro</a>
               </li>
+              <!-- Boton carrito-navbar -->
               <li class="nav-item">
-                <a class="nav-link" href=""
+                <a
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#carrito"
                   ><i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </li>
@@ -173,8 +177,8 @@
               <div class="card-body">
                 <h5 class="card-title">Eugenio Cruz</h5>
                 <p class="card-text nosotros">
-                  Edad: 37 años<br>
-                  Disenador industrial <br>
+                  Edad: 37 años<br />
+                  Disenador industrial <br />
                   Hobby: Pesca con mosca
                 </p>
               </div>
@@ -223,6 +227,70 @@
             </div>
           </div>
         </article>
+      </section>
+      <!-- Modal Carrito-->
+      <section>
+        <div
+          class="modal fade col-sm-12"
+          id="carrito"
+          tabindex="-1"
+          aria-labelledby="modalCarrito"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title fs-5 tituloCarrito" id="modalCarrito">
+                  TU CARRITO
+                </h2>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="container modal-body">
+                <!-- Carrito Mate -->
+                <div class="carrito-productos">
+                  <img
+                    src="../img/imperial_2_500x600.png"
+                    alt="mate1"
+                    class="mb-1 carritoimg"
+                  />
+                  <div class="ms-2 carrito-titulo-producto">
+                    MATE IMPERIAL PREMIUM
+                  </div>
+                  <div class="carrito-precio">$9.000</div>
+                  <!-- borrar Carrito -->
+                  <i class="btn bi bi-trash-fill borrar-carrito"></i>
+                </div>
+                <hr />
+                <!-- Carrito Bombilla  -->
+                <div class="carrito-productos">
+                  <img
+                    src="../img/pico_loro_500x600.png"
+                    alt="bombilla"
+                    class="mb-2 me-2 carritoimg"
+                  />
+                  <div class="ms-1 carrito-titulo-producto">
+                    BOMBILLA PICO DE LORO BI COLOR
+                  </div>
+                  <!-- precio -->
+                  <div class="carrito-precio">$5.000</div>
+                  <!-- borrar Carrito -->
+                  <i class="btn bi bi-trash-fill borrar-carrito"></i>
+                </div>
+                <hr />
+                <h5 class="text-end precioTotal">Total: $14.000</h5>
+                <hr />
+                <a class="btn container finalizarCompra" href="error404.html">
+                  Finalizar Compra</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="bg- text-light py-3 mt-4">

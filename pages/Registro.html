@@ -96,8 +96,9 @@
                 >
               </li>
               <li class="nav-item"><a class="nav-link" href="./Registro.html">Registro</a></li>
+              <!-- Boton carrito-navbar -->
               <li class="nav-item">
-                <a class="nav-link" href=""
+                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#carrito"
                   ><i class="fa-solid fa-cart-shopping"></i
                 ></a>
               </li>
@@ -107,10 +108,16 @@
       </nav>
     </header>
     <main>
-      <h1 class="container my-2 text-center Brygada">Registrarse en Rollingmate</h1>
+      
+      
       <!-- IMAGEN LATERAL -->
+      <div class="titulosContacto my-5">
+        <h2 class="container my-2 text-center Brygada display-2">Registrarse en Rollingmate</h2>
+      </div>
       <section class="columna p-1">
+        
         <div class="w-100">
+          
           <img
             src="../img/ROLLING MATE.974.png"
             alt="paquete de yebra mate"
@@ -118,7 +125,7 @@
           />
         </div>
        <!-- Formulario ingreso nombre y apellido -->
-        <form class="w-100">
+        <form class="w-100 mt-4">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="nombreyapellido">Nombre y apellido</label>
@@ -458,6 +465,43 @@
           <button type="submit" class="btn btn-warning col-6  col-lg-3">Registrarme</button>
       
         <a href="./Login.html">Ya sos usuario? Logeate aquí</a>
+        <!-- Modal Carrito-->
+       <section>
+        <div class="modal fade col-sm-12" id="carrito" tabindex="-1" aria-labelledby="modalCarrito" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title fs-5 tituloCarrito" id="modalCarrito">TU CARRITO</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="container modal-body">
+                <!-- Carrito Mate -->
+                <div class="carrito-productos">
+                  <img src="../img/imperial_2_500x600.png" alt="mate1" class="mb-1 carritoimg">
+                  <div class="ms-2 carrito-titulo-producto">MATE IMPERIAL PREMIUM </div>
+                  <div class="carrito-precio">$9.000 </div>
+                  <!-- borrar Carrito -->
+                  <i class="btn bi bi-trash-fill borrar-carrito"></i>
+                </div>    
+                <hr>
+                <!-- Carrito Bombilla  -->
+                <div class="carrito-productos">
+                  <img src="../img/pico_loro_500x600.png" alt="bombilla" class="mb-2 me-2 carritoimg">
+                  <div class="ms-1 carrito-titulo-producto"> BOMBILLA PICO DE LORO BI COLOR </div>
+                  <!-- precio -->
+                  <div class="carrito-precio">$5.000 </div>
+                  <!-- borrar Carrito -->
+                  <i class="btn bi bi-trash-fill borrar-carrito"></i>
+                </div>
+                <hr>     
+                <h5 class="text-end precioTotal"> Total: $14.000 </h5>
+                <hr>
+                <a class="btn container finalizarCompra" href="error404.html">  Finalizar Compra</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
   </main>
   <footer class="bg- text-light py-3 mt-4">
     <div class="container">
