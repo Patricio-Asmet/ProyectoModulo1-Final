@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="venta de yerba mate e insumos" />
+    <meta
+      name="Sebastian Villagra, Natalia Gabriela Lopez, Eugenio Cruz Cornejo, Patricio Asmet, Cristian Ivan Baldiviezo"
+      content="Nombres de los autores"
+    />
+    <meta name="keywords" content="mate, yerba, natural, infusion" />
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../js/bootstrap.bundle.min.js" />
+    <script
+      src="https://kit.fontawesome.com/1e6f48bc86.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@1,500&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Rollingmate</title>
+  </head>
+  <body>
+    <header class="mb-5">
+      <nav class="navbar navbar-expand-lg bg- navbar-dark fixed-top">
+        <div class="container-fluid">
+          <div class="imagenNav">
+            <a class="navbar-brand logo" href="../index.html"
+              ><img src="../img/logoMateBlanco.svg" alt="Logo"
+            /></a>
+          </div>
+
+          <button
+            class="navbar-toggler hamburguesa"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div
+            class="collapse navbar-collapse w-auto"
+            id="navbarSupportedContent"
+          >
+            <div class="mt-2">
+              <input type="text" placeholder="Buscar producto..." /><button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./categoriaMates.html"
+                >
+                  Mates</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./categoriaBombillas.html"
+                >
+                  Bombillas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./acercaDe.html">
+                  Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html"
+                  ><i class="fa-solid fa-envelope"></i> Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Login.html"
+                  ><i class="fa-solid fa-user"></i> Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Registro.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container mt-5">
+        <h2 class="text-center titulosContacto display-2">
+          Contactate con Nosotros
+        </h2>
+        <article class="row">
+          <div class="col-12 col-md-7">
+            <img
+              src="../img/logo_categoria.png"
+              class="logoContacto img-fluid"
+              alt="imagen del logo modificado para la página de contacto"
+            />
+          </div>
+          <div class="col-12 col-md-5 formularioContacto rounded-3 p-4 my-5">
+            <h3 class="fw-bold">Consultas</h3>
+            <p class="mt-3 fw-bold">
+              Utiliza este formulario si deseas realizar consultas y/o
+              comentarios sobre nuestro servicio y te responderemos lo antes
+              posible.
+            </p>
+            <form class="needneeds-validatio">
+              <div class="mb-3">
+                <label for="nombreContacto" class="form-label mt-2"
+                  >Nombre y Apellido (*):
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombreContacto"
+                  placeholder="Juan Perez"
+                  required
+                />
+                <label for="emailContacto" class="form-label mt-2"
+                  >Email (*):
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailContacto"
+                  placeholder="juan@gmail.com"
+                  required
+                  minlength="10"
+                  maxlength="100"
+                  aria-describedby="inputGroupPrepend2"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="textareaContacto" class="form-label mt-2"
+                  >Mensaje (*):
+                </label>
+                <textarea
+                  class="form-control"
+                  id="textareaContacto"
+                  rows="4"
+                  minlength="15"
+                  maxlength="500"
+                  required
+                ></textarea>
+
+                <div class="d-grid gap-2 mt-4">
+                  <button class="btn btnEnviarMensaje fw-bold" type="submit">
+                    Enviar Mensaje
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </article>
+        <div class="container mt-4 ubicacionContacto">
+          <h3 class="fw-bold">Ubicación</h3>
+          <p class="fw-bold">
+            <i class="bi bi-geo-alt-fill"></i> Gral. Paz 576, Piso 9 - Oficina 2
+          </p>
+          <div class="googleMaps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.118032695533!2d-65.20965262373923!3d-26.83619789001272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1695670692127!5m2!1ses-419!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg- text-light py-3 mt-4">
+      <div class="container">
+        <section class="row">
+          <div
+            class="text-center align-self-center col-md-6 col-lg-4 imagenFot"
+          >
+            <img src="./img/logoMateBlanco.svg" alt="Logo Mate" />
+          </div>
+          <div class="col-md-6 col-lg-4 text-center mt-3">
+            <h5>Rolling Mates</h5>
+            <p class="small">
+              "Uniendo amistades, sorvo a sorvo, en cada mate compartido."
+            </p>
+          </div>
+
+          <div class="col-md-12 col-lg-4 text-center align-self-center mt-3">
+            <h5>Redes sociales!</h5>
+            <a href="" class="link-light"
+              ><i class="fa-brands fa-whatsapp fa-xl" style="color: black"></i
+            ></a>
+            <a href="" class="link-light"
+              ><i
+                class="fa-brands fa-facebook fa-xl mx-3"
+                style="color: black"
+              ></i
+            ></a>
+            <a href="" class="link-light">
+              <i
+                class="fa-brands fa-square-instagram fa-xl"
+                style="color: black"
+              ></i
+            ></a>
+          </div>
+        </section>
+      </div>
+      <div class="container text-center">
+        <p class="mt-3">©2023 - Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

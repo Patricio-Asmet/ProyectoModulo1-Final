@@ -1,0 +1,437 @@
+.img-fluid-personalizada{
+    width: 700px;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.nosotros{
+    font-family: 'Brygada 1918', serif;
+    font-size: 20px;
+}
+
+
+.bg-image {
+    padding: 20px;
+    position: relative;
+}
+
+.bg-image::before {
+    content: "";
+    background-image: url('../img/MateNegro.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 88%; 
+    z-index: -1; 
+}
+
+.img-card{
+    filter: grayscale(100%);
+}
+.img-card:hover {
+    filter: grayscale(0%);
+}
+
+.borderfordisplay {
+  border: 3px solid black;
+  
+}
+.Brygada {
+  font-family: 'Brygada 1918', serif;
+}
+.Roboto{
+  font-family: 'Roboto', sans-serif;
+}
+.columna{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.promodesaparece{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-warning{
+  background-color: #925438;
+  border-color: #925438;
+  color: #fff;
+  
+  
+}
+.btn-warning:hover{
+background-color: #824b32;
+color: #fff;
+border-color: #824b32;
+}
+body{
+  background: #f1f1f0 ;
+}
+h1{
+  color: #193350;
+}
+.botonescentrados{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+  
+}
+
+/* carrousel */
+.imagen-carrousel-principal{
+  height: 550px;
+  object-fit: cover;
+
+}
+/* categorias */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@1,500&display=swap");
+
+.botonesdeimagen{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.imagenCategoriaIndex{
+
+
+width: 100%;
+height: 200px;
+object-fit: cover;
+filter: brightness(30%);
+transition: all 400ms ease;
+
+}
+.seccionCategoriaIndex{
+position: relative;
+overflow: hidden;
+}
+.nombreCategoriaIndex{
+position: absolute;
+top: 70px;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+font-family: "Brygada 1918", serif;
+color: #f1f1f0;
+
+}
+.seccionCategoriaIndex:hover .imagenCategoriaIndex{
+-webkit-transform:scale(1.3);
+transform:scale(1.3);
+}
+.tituloCategoriasIndex{
+font-family: "Brygada 1918", serif;
+color: #193350;
+}
+.columnaingresos{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* mediaqueries*/
+@media screen and (max-width: 1024px) {
+ 
+  .seccionCategoriaIndex:hover .imagenCategoriaIndex{
+    -webkit-transform: none;
+    -o-transform: none;
+    transform: none;
+
+    
+  }
+}
+@media screen and (max-width: 720px) {
+  .columnaingresos{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+  }
+}
+/* promo corte de apgina */
+.promobox{
+  
+  color: #193350;
+  font-family:'Brygada 1918', serif;
+}
+
+@media screen  and (max-width: 1024px){
+  .columna{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+  }
+  
+  .registrate{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+  }
+  .promodesaparece{
+      width: 100%;
+      display: none;
+  }
+
+  .botonescentrados{
+              align-items: center;
+      
+          }
+
+  
+   
+          
+}
+@media screen and (min-width: 1420px) {
+.botonescentrados{
+  width: 50%;
+}
+
+}
+/* ultimos ingresos */
+
+@media screen and (max-width: 1024px){
+.ultimosingresos{
+  display: flex;
+  flex-direction: column;
+}
+}
+/* font-family: 'Brygada 1918', serif; */
+
+
+/* Navbar */
+
+.navbar {
+    background-color: #925438; 
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  /* tamaño del logo */
+   .imagenNav img {
+    height: 70px;
+    width: 230px;
+    margin-left: 10%;
+  }
+  
+  
+  .hamburguesa {
+    order: 1;
+  }
+  
+  /* Estilo de la barra de busqueda */
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    color: #333;
+    width: 200px; /* Ajusta el ancho */
+  }
+  
+  /*Personaliza el botón de búsqueda */
+  button {
+    background-color: #193350;
+    color: white;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /*Estilos adicionales para hover (cuando el mouse está encima)*/
+  button:hover {
+    background-color: black;
+  }
+  
+  .nav-link {
+    color: white;
+  }
+  
+  .nav-link:hover {
+    color: #193350;
+  }
+  
+  
+  /* FOOTER*/
+  footer{
+    background-color: #925438;
+  }
+  /* Estilos para el footer */
+  .imagenFot img {
+      
+    height: 70px;
+    width: auto;
+    margin: 0 auto;
+      
+    }
+  
+  h5{
+    font-family: 'Brygada 1918', serif;
+      font-size: 20px;
+  }
+  
+  
+  /* dispositivos medianos md o tablets */
+  @media screen and (max-width: 767px){
+  
+    .imagenNav img {
+      height: 70px;
+      width: 160px;
+      margin-left: 10%;
+  }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+   
+    .imagenNav img {
+      height: 70px;
+      width: 160px;
+      margin-left: 10%;
+  }
+    
+  }
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@1,500&display=swap");
+body {
+  background: #f1f1f0;
+}
+/*Contacto*/
+.googleMaps {
+  width: 100%;
+  height: 500px;
+}
+.googleMaps iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.btnEnviarMensaje {
+  background: #925438;
+  color: #f1f1f0;
+}
+
+.titulosContacto {
+  position: relative;
+  font-family: "Brygada 1918", serif;
+  color: #193350;
+}
+.formularioContacto {
+  box-shadow: 5px 5px 20px rgba(19, 33, 50, 0.2);
+  color: #193350;
+}
+.formularioContacto p {
+  color: #193350;
+  font-family: "Roboto", sans-serif;
+}
+.formularioContacto h3 {
+  color: #925438;
+}
+.ubicacionContacto h3 {
+  font-family: "Brygada 1918", serif;
+  color: #925438;
+}
+.ubicacionContacto p {
+  font-family: "Roboto", sans-serif;
+  color: #193350;
+}
+
+.logoContacto {
+  position: relative;
+  top: 180px;
+  color: #193350;
+  width: 600px;
+}
+/*Categprías*/
+.portadaCategorias {
+  position: relative;
+  top: 0px;
+}
+
+.portadaCategorias img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(30%);
+}
+.parrafoCategoria {
+  font-family: "Brygada 1918", serif;
+  color: #193350;
+}
+
+.tituloCategoria {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-family: "Brygada 1918", serif;
+  color: #f1f1f0;
+}
+.cardBodyCategoria {
+  color: #193350;
+}
+.btnVerProducto {
+  background: #925438;
+  color: #f1f1f0;
+}
+.colorControlPaginacion {
+  color: #193350;
+}
+
+.videoYoutube video {
+  width: 100%;
+  height: auto;
+}
+
+.cardCategoria {
+  transition: all 400ms ease;
+}
+
+.cardCategoria:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-3%);
+  -o-transform: translateY(-3%);
+  transform: translateY(-3%);
+}
+/*media queris*/
+@media screen and (max-width: 767px) {
+  .cardCategoria:hover{
+    -webkit-transform: none;
+    -o-transform: none;
+    transform: none;
+
+    
+  }
+  
+}
